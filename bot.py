@@ -36,7 +36,7 @@ async def on_message(message):
     if message.channel.id != ALLOWED_CHANNEL_ID:
         return
 
-    if message.content.strip() == ".s":
+    if message.content.strip() == ",s":
         if message.author.id == ALLOWED_USER_ID:
             await message.reply(AUTO_REPLY, mention_author=False)
         else:
